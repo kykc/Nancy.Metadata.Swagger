@@ -22,5 +22,9 @@ namespace Nancy.Metadata.Swagger.Model
 
         [JsonProperty("parameters")]
         public List<SwaggerRequestParameter> RequestParameters { get; set; }
+        [JsonProperty("consumes")]
+        public string[] Consumes { get; set; }
+        [JsonProperty("produces")]
+        public string[] Produces { get; set; }
     }
 }
